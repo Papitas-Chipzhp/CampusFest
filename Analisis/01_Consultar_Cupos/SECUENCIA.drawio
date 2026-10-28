@@ -1,0 +1,108 @@
+<mxGraphModel dx="1361" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="700" background="#ffffff" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="part_est" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="Estudiante" vertex="1">
+      <mxGeometry height="580" width="90" x="60" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="part_pantalla" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;boundary&amp;raquo;&#xa;PantallaEventos" vertex="1">
+      <mxGeometry height="580" width="110" x="230" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="part_control" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;control&amp;raquo;&#xa;CalcularDisponibilidad" vertex="1">
+      <mxGeometry height="580" width="140" x="430" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="part_evento" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;entity&amp;raquo;&#xa;Evento" vertex="1">
+      <mxGeometry height="580" width="100" x="650" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="part_reserva" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;entity&amp;raquo;&#xa;Reserva" vertex="1">
+      <mxGeometry height="580" width="100" x="810" y="40" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_1" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="105" y="110" as="sourcePoint" />
+        <mxPoint x="285" y="110" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_1" connectable="0" parent="s_msg_1" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="1: seleccionarEvento(idEvento)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_2" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="285" y="150" as="sourcePoint" />
+        <mxPoint x="500" y="150" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_2" connectable="0" parent="s_msg_2" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="2: solicitarCalculoDisponibilidad(idEvento)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_3" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500" y="200" as="sourcePoint" />
+        <mxPoint x="700" y="200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_3" connectable="0" parent="s_msg_3" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="3: solicitarAforoYBloqueados()" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_4" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="700" y="240" as="sourcePoint" />
+        <mxPoint x="500" y="240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_4" connectable="0" parent="s_msg_4" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="4: devolverAforoYBloqueados(120, 5)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_5" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500" y="290" as="sourcePoint" />
+        <mxPoint x="860" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_5" connectable="0" parent="s_msg_5" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="5: solicitarReservasActivas()" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_6" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="860" y="330" as="sourcePoint" />
+        <mxPoint x="500" y="330" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_6" connectable="0" parent="s_msg_6" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="6: devolverReservas(83 conf, 12 pend)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_7" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="550" y="370" />
+          <mxPoint x="550" y="410" />
+        </Array>
+        <mxPoint x="500" y="370" as="sourcePoint" />
+        <mxPoint x="500" y="410" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_7" connectable="0" parent="s_msg_7" style="edgeLabel;html=1;align=left;verticalAlign=middle;fontSize=9;" value="7: calcularCuposDisponibles() [120 - 5 - 83 - 12 = 20]" vertex="1">
+      <mxGeometry relative="1" x="0.2" as="geometry">
+        <mxPoint x="10" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_msg_8" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500" y="460" as="sourcePoint" />
+        <mxPoint x="285" y="460" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_8" connectable="0" parent="s_msg_8" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="8: retornarDisponibilidad(20)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s_msg_9" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="285" y="500" as="sourcePoint" />
+        <mxPoint x="105" y="500" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="s_lbl_9" connectable="0" parent="s_msg_9" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="9: mostrarCuposDisponibles(20)" vertex="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

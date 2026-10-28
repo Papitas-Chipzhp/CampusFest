@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="AcFKv5HeaPw86Lm9eJFw" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="700" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a_org" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="a_pant" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Eventos" vertex="1">
+          <mxGeometry height="75" width="95" x="260" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ctrl" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Gestion&#xa;Reserva" vertex="1">
+          <mxGeometry height="85" width="90" x="560" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="a_evt" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Evento" vertex="1">
+          <mxGeometry height="85" width="85" x="930" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a_res" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reserva" vertex="1">
+          <mxGeometry height="85" width="85" x="930" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="a_rep" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reporte&#xa;Reservas" vertex="1">
+          <mxGeometry height="75" width="95" x="380" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="al_base_1" edge="1" parent="1" source="a_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="a_pant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="al_base_2" edge="1" parent="1" source="a_pant" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="a_ctrl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="al_base_3" edge="1" parent="1" source="a_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="a_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="al_base_4" edge="1" parent="1" source="a_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="a_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="al_base_5" edge="1" parent="1" source="a_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="a_rep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_1" edge="1" parent="1" source="a_org" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="a_pant" value="1: seleccionarEvento()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_11" edge="1" parent="1" source="a_pant" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="a_org" value="11.a: &quot;OK&quot; / 11.b: Reporte">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_2" edge="1" parent="1" source="a_pant" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="a_ctrl" value="2: solicitarListaReservas()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_10" edge="1" parent="1" source="a_ctrl" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="a_pant" value="10: &quot;reporte generado&quot;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_3" edge="1" parent="1" source="a_ctrl" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0.85;exitY=0.15;entryX=0.15;entryY=0.65;" target="a_evt" value="3: solicitarInfoEvento()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_4" edge="1" parent="1" source="a_evt" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0.15;exitY=0.9;entryX=0.85;entryY=0.4;" target="a_ctrl" value="4: devuelveInfoEvento()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="am_5" edge="1" parent="1" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;entryX=0.1;entryY=0.15;" target="a_res" value="5: solicitarInfoReserva()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="am_6" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;entryX=0.9;entryY=0.8;" target="a_ctrl" value="6: devuelveInfoReserva()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="am_7" edge="1" parent="1" source="a_ctrl" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;curved=1;" target="a_ctrl">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="160" />
+              <mxPoint x="635" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="am_7_lbl" parent="1" style="text;html=1;align=center;verticalAlign=bottom;fontSize=9;fontColor=#000000;" value="7: calcularListadoReservas()" vertex="1">
+          <mxGeometry height="20" width="160" x="530" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="am_8" edge="1" parent="1" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;" value="8: generarReporteReservas()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="315" as="sourcePoint" />
+            <mxPoint x="440" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="am_9" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;" value="9: &quot;reporte generado&quot;">
+          <mxGeometry relative="1" x="-0.01" as="geometry">
+            <Array as="points" />
+            <mxPoint x="490" y="460" as="sourcePoint" />
+            <mxPoint x="600" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,68 @@
+<mxGraphModel dx="1134" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="600" background="#ffffff" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="act_est_2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Estudiante" vertex="1">
+      <mxGeometry height="70" width="40" x="50" y="240" as="geometry" />
+    </mxCell>
+    <mxCell id="b_pantalla_2" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Eventos" vertex="1">
+      <mxGeometry height="70" width="90" x="200" y="240" as="geometry" />
+    </mxCell>
+    <mxCell id="c_control_2" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Calcular&#xa;Disponibilidad" vertex="1">
+      <mxGeometry height="80" width="80" x="460" y="235" as="geometry" />
+    </mxCell>
+    <mxCell id="e_evento_2" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Evento" vertex="1">
+      <mxGeometry height="80" width="80" x="780" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="e_reserva_2" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reserva" vertex="1">
+      <mxGeometry height="80" width="80" x="780" y="370" as="geometry" />
+    </mxCell>
+    <mxCell id="line_1" edge="1" parent="1" source="act_est_2" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_pantalla_2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="line_2" edge="1" parent="1" source="b_pantalla_2" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_control_2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="line_3" edge="1" parent="1" source="c_control_2" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_evento_2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="line_4" edge="1" parent="1" source="c_control_2" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_reserva_2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="m1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;" value="1: seleccionarEvento() →" vertex="1">
+      <mxGeometry height="20" width="130" x="70" y="220" as="geometry" />
+    </mxCell>
+    <mxCell id="m9" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;" value="← 9: mostrarCupos(20)" vertex="1">
+      <mxGeometry height="20" width="130" x="70" y="295" as="geometry" />
+    </mxCell>
+    <mxCell id="m2" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;" value="2: solicitarCalculo() →" vertex="1">
+      <mxGeometry height="20" width="140" x="305" y="240" as="geometry" />
+    </mxCell>
+    <mxCell id="m8" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;" value="← 8: retornarResultado(20)" vertex="1">
+      <mxGeometry height="20" width="140" x="305" y="275" as="geometry" />
+    </mxCell>
+    <mxCell id="m3" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;rotation=-22;" value="3: solicitarAforoYBloqueados() ↗" vertex="1">
+      <mxGeometry height="20" width="180" x="555" y="150" as="geometry" />
+    </mxCell>
+    <mxCell id="m4" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;rotation=-22;" value="↙ 4: devuelve(120, 5)" vertex="1">
+      <mxGeometry height="20" width="150" x="600" y="190" as="geometry" />
+    </mxCell>
+    <mxCell id="m5" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;rotation=22;" value="5: solicitarReservasActivas() ↘" vertex="1">
+      <mxGeometry height="20" width="180" x="560" y="310" as="geometry" />
+    </mxCell>
+    <mxCell id="m6" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#000000;rotation=22;" value="↖ 6: devuelve(83 conf, 12 pend)" vertex="1">
+      <mxGeometry height="20" width="180" x="580" y="350" as="geometry" />
+    </mxCell>
+    <mxCell id="m7_edge" edge="1" parent="1" source="c_control_2" style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=1;endFill=1;curved=1;" target="c_control_2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="480" y="170" />
+          <mxPoint x="520" y="170" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="m7_lbl" parent="1" style="text;html=1;align=center;verticalAlign=bottom;fontSize=9;fontColor=#000000;" value="7: calcularCuposDisponibles()&#xa;[120 - 5 - 83 - 12 = 20]" vertex="1">
+      <mxGeometry height="30" width="160" x="420" y="130" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

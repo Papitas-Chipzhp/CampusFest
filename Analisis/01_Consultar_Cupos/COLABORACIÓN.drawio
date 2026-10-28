@@ -1,0 +1,33 @@
+<mxGraphModel dx="1361" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="act_est_1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Estudiante" vertex="1">
+      <mxGeometry height="70" width="40" x="60" y="180" as="geometry" />
+    </mxCell>
+    <mxCell id="b_pantalla_1" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Eventos" vertex="1">
+      <mxGeometry height="70" width="90" x="190" y="180" as="geometry" />
+    </mxCell>
+    <mxCell id="c_control_1" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Calcular&#xa;Disponibilidad" vertex="1">
+      <mxGeometry height="80" width="80" x="380" y="175" as="geometry" />
+    </mxCell>
+    <mxCell id="e_evento_1" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Evento" vertex="1">
+      <mxGeometry height="80" width="80" x="580" y="80" as="geometry" />
+    </mxCell>
+    <mxCell id="e_reserva_1" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reserva" vertex="1">
+      <mxGeometry height="80" width="80" x="580" y="270" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_colab_1" edge="1" parent="1" source="act_est_1" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_pantalla_1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_colab_2" edge="1" parent="1" source="b_pantalla_1" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_control_1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_colab_3" edge="1" parent="1" source="c_control_1" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_evento_1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge_colab_4" edge="1" parent="1" source="c_control_1" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_reserva_1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

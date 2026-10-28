@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="xjB7vVeD6QFho89Bwmsn" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_evento" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Evento" vertex="1">
+          <mxGeometry height="204" width="340" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_evento_attrs" parent="cls_evento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="- idEvento: String&#xa;- nombre: String&#xa;- tipoEvento: String&#xa;- aforoMaximo: int&#xa;- cuposBloqueados: int&#xa;- fechaHoraUltimaMod: DateTime" vertex="1">
+          <mxGeometry height="104" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_evento_sep" parent="cls_evento" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_evento_ops" parent="cls_evento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ getCuposDisponibles(): int&#xa;+ actualizarDescripcion(desc: String, timestamp: DateTime): void&#xa;+ getAforoYBloqueados(): Map" vertex="1">
+          <mxGeometry height="66" width="340" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_estudiante" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Estudiante" vertex="1">
+          <mxGeometry height="154" width="340" x="50" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_estudiante_attrs" parent="cls_estudiante" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="- codigoEstudiante: String&#xa;- nombreCompleto: String&#xa;- correoInstitucional: String&#xa;- programaAcademico: String" vertex="1">
+          <mxGeometry height="72" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_estudiante_sep" parent="cls_estudiante" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_estudiante_ops" parent="cls_estudiante" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ consultarEventos(): List&#xa;+ validarIdentidad(): boolean" vertex="1">
+          <mxGeometry height="48" width="340" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_reserva" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Reserva" vertex="1">
+          <mxGeometry height="236" width="320" x="480" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_reserva_attrs" parent="cls_reserva" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="- idReserva: String&#xa;- idEvento: String&#xa;- idEstudiante: String&#xa;- estado: EstadoReserva&#xa;- fechaHoraCreacion: DateTime&#xa;- codigoQR: String" vertex="1">
+          <mxGeometry height="104" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_reserva_sep" parent="cls_reserva" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_reserva_ops" parent="cls_reserva" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ confirmar(): void&#xa;+ cancelar(): void&#xa;+ marcarComoVencida(): void&#xa;+ estaExpirada(minutos: int): boolean&#xa;+ esValidaParaIngreso(): boolean" vertex="1">
+          <mxGeometry height="98" width="320" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_asistencia" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Asistencia" vertex="1">
+          <mxGeometry height="136" width="260" x="890" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_asistencia_attrs" parent="cls_asistencia" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="- idAsistencia: String&#xa;- idReserva: String&#xa;- fechaHoraIngreso: DateTime" vertex="1">
+          <mxGeometry height="54" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_asistencia_sep" parent="cls_asistencia" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_asistencia_ops" parent="cls_asistencia" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ registrarIngreso(): void&#xa;+ getFechaHoraIngreso(): DateTime" vertex="1">
+          <mxGeometry height="48" width="260" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cls_evt_res" edge="1" parent="1" source="cls_evento" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.8;" target="cls_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_er1" connectable="0" parent="rel_cls_evt_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_ern" connectable="0" parent="rel_cls_evt_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cls_est_res" edge="1" parent="1" source="cls_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.8;" target="cls_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_esr1" connectable="0" parent="rel_cls_est_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_esrn" connectable="0" parent="rel_cls_est_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cls_res_asis" edge="1" parent="1" source="cls_reserva" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.8;" target="cls_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_ra1" connectable="0" parent="rel_cls_res_asis" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_c_ra01" connectable="0" parent="rel_cls_res_asis" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

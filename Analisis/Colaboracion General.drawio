@@ -1,0 +1,145 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="xjB7vVeD6QFho89Bwmsn" name="Página-1">
+    <mxGraphModel dx="1566" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="act_estudiante" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;" value="Estudiante" vertex="1">
+          <mxGeometry height="75" width="45" x="50" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_temporizador" parent="1" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=10;strokeWidth=1.5;" value="&amp;laquo;system&amp;raquo;&#xa;&lt;b&gt;Servicio Temporizador&lt;/b&gt;&#xa;(Expiración 10 min)" vertex="1">
+          <mxGeometry height="55" width="140" x="190" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_organizador" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="50" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="b_pantalla_est" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Estudiante" vertex="1">
+          <mxGeometry height="75" width="100" x="210" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="b_pantalla_org" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Organizador" vertex="1">
+          <mxGeometry height="75" width="100" x="210" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="b_rep_reservas" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reporte&#xa;Reservas" vertex="1">
+          <mxGeometry height="75" width="105" x="610" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="b_rep_asistencia" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reporte&#xa;Asistencia" vertex="1">
+          <mxGeometry height="75" width="105" x="370" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="c_reserva" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Gestionar Reserva&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="95" x="490" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="c_evento" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Gestionar Evento&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="95" x="490" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c_asistencia" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Registrar Asistencia&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="95" x="450" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c_reportes" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Generar Reportes&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="95" x="490" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e_evento" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Evento" vertex="1">
+          <mxGeometry height="85" width="85" x="690" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e_estudiante" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Estudiante" vertex="1">
+          <mxGeometry height="85" width="85" x="945" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_reserva" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Reserva" vertex="1">
+          <mxGeometry height="85" width="85" x="1140" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e_asistencia" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Asistencia" vertex="1">
+          <mxGeometry height="85" width="85" x="1140" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="nota_disponibilidad" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingLeft=5;fillColor=#ffffff;strokeColor=#000000;fontSize=9;" value="&lt;b&gt;Regla de Disponibilidad:&lt;/b&gt;&#xa;Cupos = Aforo - Bloqueados&#xa;- Confirmadas - Pendientes&#xa;[Retos 2 y 3]" vertex="1">
+          <mxGeometry height="65" width="165" x="660" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nota_asistencia" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingLeft=5;fillColor=#ffffff;strokeColor=#000000;fontSize=9;" value="&lt;b&gt;Criterio de Autorización:&lt;/b&gt;&#xa;• Reserva en estado Confirmada&#xa;• Ingreso único (sin registro previo)&#xa;[Reto Asistencia / 0..1]" vertex="1">
+          <mxGeometry height="65" width="175" x="220" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_nota_disp" edge="1" parent="1" source="nota_disponibilidad" style="dashed=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" target="c_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_nota_asis" edge="1" parent="1" source="nota_asistencia" style="dashed=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" target="c_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_1" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_pantalla_est">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_2" edge="1" parent="1" source="b_pantalla_est" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_3" edge="1" parent="1" source="sys_temporizador" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_4" edge="1" parent="1" source="act_organizador" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_pantalla_org">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_5" edge="1" parent="1" source="b_pantalla_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_evento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_6" edge="1" parent="1" source="b_pantalla_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_7" edge="1" parent="1" source="b_pantalla_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_reportes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_8" edge="1" parent="1" source="c_reserva" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_evento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_9" edge="1" parent="1" source="c_reserva" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_10" edge="1" parent="1" source="c_evento" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_evento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_11" edge="1" parent="1" source="c_asistencia" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_12" edge="1" parent="1" source="c_asistencia" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_13" edge="1" parent="1" source="c_reportes" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_evento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_14" edge="1" parent="1" source="c_reportes" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_estudiante">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_15" edge="1" parent="1" source="c_reportes" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="e_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_16" edge="1" parent="1" source="c_reportes" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_rep_reservas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rel_17" edge="1" parent="1" source="c_reportes" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="b_rep_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dom_evt_res" edge="1" parent="1" source="e_evento" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2.2;" target="e_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_er1" connectable="0" parent="dom_evt_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_ern" connectable="0" parent="dom_evt_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="dom_est_res" edge="1" parent="1" source="e_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2.2;" target="e_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_esr1" connectable="0" parent="dom_est_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_esrn" connectable="0" parent="dom_est_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="dom_res_asis" edge="1" parent="1" source="e_reserva" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2.2;" target="e_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_ra1" connectable="0" parent="dom_res_asis" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_d_ra01" connectable="0" parent="dom_res_asis" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

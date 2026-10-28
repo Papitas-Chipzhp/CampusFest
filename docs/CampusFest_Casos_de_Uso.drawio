@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="dK3goxl60Hn6wRqJO80k">
+    <mxGraphModel dx="1361" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="box_uso" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;dashed=0;" value="CampusFest&#xa;(uso)" vertex="1">
+          <mxGeometry height="420" width="580" x="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_estudiante" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Estudiante" vertex="1">
+          <mxGeometry height="75" width="45" x="90" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_consultar_cupos" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Consultar cupos" vertex="1">
+          <mxGeometry height="50" width="150" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_reservar" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Reservar" vertex="1">
+          <mxGeometry height="50" width="150" x="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_confirmar_reserva" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Confirmar reserva" vertex="1">
+          <mxGeometry height="50" width="150" x="300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_cancelar_reserva_est" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Cancelar reserva" vertex="1">
+          <mxGeometry height="50" width="150" x="300" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_registrarse" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Registrarse&#xa;(asistencia)" vertex="1">
+          <mxGeometry height="50" width="150" x="300" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_consultar_eventos_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Consultar eventos" vertex="1">
+          <mxGeometry height="55" width="150" x="640" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_1" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_consultar_cupos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_2" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_reservar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_3" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_confirmar_reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_4" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_cancelar_reserva_est">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_5" edge="1" parent="1" source="act_estudiante" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_registrarse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_1" edge="1" parent="1" source="uc_consultar_cupos" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_1" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_2" edge="1" parent="1" source="uc_reservar" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_1" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_3" edge="1" parent="1" source="uc_confirmar_reserva" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_1" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_4" edge="1" parent="1" source="uc_cancelar_reserva_est" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_1" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_5" edge="1" parent="1" source="uc_registrarse" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_1" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="box_org" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;dashed=0;" value="CampusFest&#xa;(Organización)" vertex="1">
+          <mxGeometry height="420" width="580" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="act_organizador" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="90" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_gestionar_evento" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Gestionar un evento" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_rep_reservas" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Generar reporte de&#xa;reservas" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_rep_asistencia" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Generar reporte de&#xa;asistencia" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_cancelar_reserva_org" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Cancelar reserva" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_consultar_eventos_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;fontStyle=0;" value="Consultar eventos" vertex="1">
+          <mxGeometry height="55" width="150" x="640" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_org_1" edge="1" parent="1" source="act_organizador" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_gestionar_evento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_org_2" edge="1" parent="1" source="act_organizador" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_rep_reservas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_org_3" edge="1" parent="1" source="act_organizador" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_rep_asistencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_timer" edge="1" parent="1" source="SxKBK5jINFEm1m769loT-7" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.2;" target="uc_cancelar_reserva_org">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="132.5" y="831.1206192868569" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc_6" edge="1" parent="1" source="uc_gestionar_evento" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_2" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_7" edge="1" parent="1" source="uc_rep_reservas" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_2" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_8" edge="1" parent="1" source="uc_rep_asistencia" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_2" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_9" edge="1" parent="1" source="uc_cancelar_reserva_org" style="dashed=1;endArrow=open;endSize=10;html=1;strokeColor=#000000;strokeWidth=1;fontSize=10;labelBackgroundColor=#ffffff;" target="uc_consultar_eventos_2" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxKBK5jINFEm1m769loT-7" parent="1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.clock;labelPerimeter=1;fontColor=#000000;fontSize=12;fontFamily=Helvetica;fontStyle=0;" value="&lt;span style=&quot;background-color: light-dark(rgb(27, 29, 30), rgb(0, 0, 0));&quot;&gt;&lt;br&gt;&lt;span style=&quot;font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; float: none; display: inline !important;&quot;&gt;10 mins&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; box-shadow: none !important;&quot;&gt;&lt;span style=&quot;font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; float: none; display: inline !important;&quot;&gt;de una reserva&lt;/span&gt;&lt;br&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="45" width="45" x="70" y="800" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

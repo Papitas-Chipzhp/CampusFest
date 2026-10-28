@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="jwoo2td_5pfP1Sktezos" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_org" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="60" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c_pant" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Organizador" vertex="1">
+          <mxGeometry height="75" width="95" x="230" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c_ctrl" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Registrar Asistencia&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="90" x="460" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="c_res" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reserva" vertex="1">
+          <mxGeometry height="85" width="85" x="740" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c_asis" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Asistencia" vertex="1">
+          <mxGeometry height="85" width="85" x="740" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c1" edge="1" parent="1" source="c_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_pant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c2" edge="1" parent="1" source="c_pant" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_ctrl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c3" edge="1" parent="1" source="c_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c4" edge="1" parent="1" source="c_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1.5;" target="c_asis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c_dom" edge="1" parent="1" source="c_res" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="c_asis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dom_1" connectable="0" parent="edge_c_dom" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=10;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.6" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dom_01" connectable="0" parent="edge_c_dom" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=10;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.6" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

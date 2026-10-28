@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="AcFKv5HeaPw86Lm9eJFw" name="Página-1">
+    <mxGraphModel dx="1434" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="700" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sqb_org" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="Organizador" vertex="1">
+          <mxGeometry height="780" width="90" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_pant" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;boundary&amp;raquo;&#xa;PantallaOrganizador" vertex="1">
+          <mxGeometry height="780" width="130" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_ctrl" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;control&amp;raquo;&#xa;GestionAsistencia" vertex="1">
+          <mxGeometry height="780" width="120" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_evt" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;entity&amp;raquo;&#xa;Evento" vertex="1">
+          <mxGeometry height="780" width="80" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_asis" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;entity&amp;raquo;&#xa;Asistencia" vertex="1">
+          <mxGeometry height="780" width="90" x="720" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_est" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;entity&amp;raquo;&#xa;Estudiante" vertex="1">
+          <mxGeometry height="780" width="90" x="870" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sqb_rep" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;size=40;" value="&amp;laquo;boundary&amp;raquo;&#xa;ReporteAsistencia" vertex="1">
+          <mxGeometry height="780" width="120" x="1030" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s1" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="85" y="105" as="sourcePoint" />
+            <mxPoint x="265" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl1" connectable="0" parent="bm_s1" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="1: seleccionarEvento(idEvento)" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s2" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="265" y="140" as="sourcePoint" />
+            <mxPoint x="460" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl2" connectable="0" parent="bm_s2" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="2: solicitarCalculoAsistencia()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s3" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="175" as="sourcePoint" />
+            <mxPoint x="620" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl3" connectable="0" parent="bm_s3" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="3: solicitarInfoEvento()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s4" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="210" as="sourcePoint" />
+            <mxPoint x="460" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl4" connectable="0" parent="bm_s4" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="4: retornoInfoEvento()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s5" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="250" as="sourcePoint" />
+            <mxPoint x="765" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl5" connectable="0" parent="bm_s5" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="5: solicitarInfoAsistencia()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s6" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="765" y="285" as="sourcePoint" />
+            <mxPoint x="460" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl6" connectable="0" parent="bm_s6" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="6: retornarInfoAsistencia()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s7" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="325" as="sourcePoint" />
+            <mxPoint x="915" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl7" connectable="0" parent="bm_s7" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="7: solicitarInfoEstudiantes()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s8" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="915" y="360" as="sourcePoint" />
+            <mxPoint x="460" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl8" connectable="0" parent="bm_s8" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="8: retornarInfoEstudiantes()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s9" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="400" />
+              <mxPoint x="510" y="440" />
+            </Array>
+            <mxPoint x="460" y="400" as="sourcePoint" />
+            <mxPoint x="460" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl9" connectable="0" parent="bm_s9" style="edgeLabel;html=1;align=left;verticalAlign=middle;fontSize=9;" value="9: calcularListadoAsistencias()" vertex="1">
+          <mxGeometry relative="1" x="0.2" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_s10" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;endFill=1;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="475" as="sourcePoint" />
+            <mxPoint x="1090" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl10" connectable="0" parent="bm_s10" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="10: generarReporteAsistencia()" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s11" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1090" y="510" as="sourcePoint" />
+            <mxPoint x="460" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl11" connectable="0" parent="bm_s11" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="11: &quot;reporte generado&quot;" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s12" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="545" as="sourcePoint" />
+            <mxPoint x="265" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl12" connectable="0" parent="bm_s12" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="12: &quot;reporte generado&quot;" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_s13" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="265" y="580" as="sourcePoint" />
+            <mxPoint x="85" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_lbl13" connectable="0" parent="bm_s13" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=10;" value="13.a: &quot;OK&quot; / 13.b: Reporte" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

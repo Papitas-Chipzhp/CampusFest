@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="FL1vIULWXSfqHxrizGgk" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="600" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m6_org" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_pant" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla&#xa;Organizador" vertex="1">
+          <mxGeometry height="75" width="95" x="250" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_ctrl" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Gestionar Evento&#xa;Control" vertex="1">
+          <mxGeometry height="85" width="90" x="500" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_evt" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Evento" vertex="1">
+          <mxGeometry height="85" width="85" x="770" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_base1" edge="1" parent="1" source="m6_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="m6_pant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_base2" edge="1" parent="1" source="m6_pant" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="m6_ctrl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m6_base3" edge="1" parent="1" source="m6_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="m6_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_1" edge="1" parent="1" source="m6_org" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="m6_pant" value="1: modificarDescripcion(idEvento, desc)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_6" edge="1" parent="1" source="m6_pant" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="m6_org" value="6: mostrarMensajeExito(&quot;Modificado&quot;)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_2" edge="1" parent="1" source="m6_pant" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="m6_ctrl" value="2: solicitarActualizacion(idEvento, desc)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_5" edge="1" parent="1" source="m6_ctrl" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="m6_pant" value="5: notificarActualizacion()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_3" edge="1" parent="1" source="m6_ctrl" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="m6_evt" value="3: actualizarDescripcion(desc, timestamp)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6_4" edge="1" parent="1" source="m6_evt" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="m6_ctrl" value="4: confirmacionActualizacion()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

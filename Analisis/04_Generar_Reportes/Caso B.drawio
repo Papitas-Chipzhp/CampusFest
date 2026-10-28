@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="AcFKv5HeaPw86Lm9eJFw" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="700" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b_org" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Organizador" vertex="1">
+          <mxGeometry height="75" width="45" x="50" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="b_pant" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Pantalla Evento&#xa;Organizador" vertex="1">
+          <mxGeometry height="75" width="105" x="240" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="b_ctrl" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Gestion&#xa;Asistencia" vertex="1">
+          <mxGeometry height="85" width="90" x="530" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="b_evt" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Evento" vertex="1">
+          <mxGeometry height="85" width="85" x="920" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="b_asis" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Asistencia" vertex="1">
+          <mxGeometry height="85" width="85" x="920" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="b_est" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Estudiante" vertex="1">
+          <mxGeometry height="85" width="85" x="920" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="b_rep" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;" value="Reporte&#xa;Asistencia" vertex="1">
+          <mxGeometry height="75" width="105" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_1" edge="1" parent="1" source="b_org" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_pant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_2" edge="1" parent="1" source="b_pant" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_ctrl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_3" edge="1" parent="1" source="b_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_4" edge="1" parent="1" source="b_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_asis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_5" edge="1" parent="1" source="b_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_est">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bl_base_6" edge="1" parent="1" source="b_ctrl" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="b_rep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_1" edge="1" parent="1" source="b_org" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="b_pant" value="1: seleccionarEvento()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_13" edge="1" parent="1" source="b_pant" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="b_org" value="13.a: &quot;OK&quot; / 13.b: Reporte">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_2" edge="1" parent="1" source="b_pant" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=1;exitY=0.2;entryX=0;entryY=0.2;" target="b_ctrl" value="2: solicitarCalculoAsistencia()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_12" edge="1" parent="1" source="b_ctrl" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.8;entryX=1;entryY=0.8;" target="b_pant" value="12: &quot;reporte generado&quot;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_3" edge="1" parent="1" source="b_ctrl" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0.85;exitY=0.15;" value="3: solicitarInfoEvento()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_4" edge="1" parent="1" source="b_evt" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0.15;exitY=0.9;" value="4: retornoInfoEvento()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_5" edge="1" parent="1" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;" value="5: solicitarInfoAsistencia()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="290" as="sourcePoint" />
+            <mxPoint x="910" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_6" edge="1" parent="1" source="b_asis" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0;exitY=0.7;entryX=1;entryY=0.7;" target="b_ctrl" value="6: retornarInfoAsistencia()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_7" edge="1" parent="1" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="b_est" value="7: solicitarInfoEstudiantes()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_8" edge="1" parent="1" source="b_est" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;exitX=0.15;exitY=0.55;entryX=0.85;entryY=1;" target="b_ctrl" value="8: retornarInfoEstudiantes()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_9" edge="1" parent="1" source="b_ctrl" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;curved=1;" target="b_ctrl">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="180" />
+              <mxPoint x="605" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_9_lbl" parent="1" style="text;html=1;align=center;verticalAlign=bottom;fontSize=9;fontColor=#000000;" value="9: calcularListadoAsistencias()" vertex="1">
+          <mxGeometry height="20" width="160" x="500" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bm_10" edge="1" parent="1" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;" value="10: generarReporteAsistencia()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="335" as="sourcePoint" />
+            <mxPoint x="420" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bm_11" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;strokeColor=#000000;strokeWidth=1.2;fontSize=9;" value="11: &quot;reporte generado&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="500" as="sourcePoint" />
+            <mxPoint x="570" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

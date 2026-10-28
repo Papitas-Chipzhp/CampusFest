@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="xjB7vVeD6QFho89Bwmsn" name="Página-1">
+    <mxGraphModel dx="1190" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ent_evt" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Evento" vertex="1">
+          <mxGeometry height="90" width="90" x="120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_est" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Estudiante" vertex="1">
+          <mxGeometry height="90" width="90" x="120" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_res" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Reserva" vertex="1">
+          <mxGeometry height="90" width="90" x="420" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_asis" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=12;" value="Asistencia" vertex="1">
+          <mxGeometry height="90" width="90" x="720" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_evt_res" edge="1" parent="1" source="ent_evt" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="ent_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_er_1" connectable="0" parent="rel_evt_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_er_n" connectable="0" parent="rel_evt_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est_res" edge="1" parent="1" source="ent_est" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="ent_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_esr_1" connectable="0" parent="rel_est_res" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_esr_n" connectable="0" parent="rel_est_res" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_res_asis" edge="1" parent="1" source="ent_res" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;" target="ent_asis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ra_1" connectable="0" parent="rel_res_asis" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=11;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ra_01" connectable="0" parent="rel_res_asis" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;fontSize=11;fontStyle=1;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
